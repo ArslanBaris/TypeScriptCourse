@@ -26,3 +26,21 @@ let array : [number,string] = [2,"İstanbul"]
 
 enum Colors {Kirmizi=1,Siyah,Mavi}
 let color : Colors = Colors.Kirmizi
+
+let notSure : any = "Ankara"
+notSure = 2
+notSure = {}
+
+let notSure2 : void = undefined
+
+function greeter2():void{
+    console.log("Hello");
+}
+
+// undefined / null
+
+let age:number;  // age -> undefined
+
+class Customer{  // Customer -> null
+    
+}
