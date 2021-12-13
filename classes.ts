@@ -1,5 +1,5 @@
 class Ev {
-  _odaSayisi: number;
+  private _odaSayisi: number;   // default Public
   _pencereSayisi: number;
   _kat: number;
 
@@ -19,6 +19,8 @@ ev.yemekYe();
 
 
 class Kisi{
+    protected isim: string
+
     kaydet(){
         console.log("Kişi kaydedildi.");
     }
@@ -26,6 +28,7 @@ class Kisi{
 
 class Musteri extends Kisi{
     satisYap(){
+        // this.isim
         console.log("Satış yapıldı.");
     }
 }
