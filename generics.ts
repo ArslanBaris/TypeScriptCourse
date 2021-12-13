@@ -13,7 +13,7 @@ let sehir = deger2("Ankara");
 console.log(sehir);
 
 function deger3<T>(x: T): T {
-    return x;
+  return x;
 }
 
 let sayi2 = deger3<number>(10);
@@ -21,3 +21,13 @@ console.log(sayi2);
 
 let sehir2 = deger3<string>("Ankara");
 console.log(sehir2);
+
+class GenericClass<T> {
+  degisken: T;
+  fonksiyon(parameter: T): T {
+    return parameter;
+  }
+}
+
+let sinif = new GenericClass<string>()
+sinif.fonksiyon("Ankara")
