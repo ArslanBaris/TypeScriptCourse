@@ -31,3 +31,16 @@ function topla5(x:number, y?:number):number {  // optional parameters
 }
 console.log(topla5(3));     // 3
 console.log(topla5(3,5));   // 8
+
+function davet(ilkDavetli : string, ...digerleri:string[]):string{      // rest parameters
+    return ilkDavetli + " " + digerleri.join(" ");
+}
+
+console.log(davet("Barış","Engin","Mehmet","Ali")); 
+
+
+function davet2(...digerleri:string[]):string{
+    return  digerleri.join(" ");
+}
+
+console.log(davet2("Barış","Engin","Mehmet","Ali")); 
