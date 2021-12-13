@@ -19,7 +19,15 @@ ev.yemekYe();
 
 
 class Kisi{
-    protected isim: string
+    private _isim: string
+
+    get isim():string{
+        return "Sayın : " + this._isim;
+    }
+
+    set isim(ad:string){
+        this._isim=ad;
+    }
 
     kaydet(){
         console.log("Kişi kaydedildi.");
@@ -40,9 +48,14 @@ class Personel extends Kisi{
 }
 
 let musteri = new Musteri()
+
+musteri.isim="Barış"
+console.log(musteri.isim);
+
 musteri.kaydet()
 musteri.satisYap();
 
 let personel = new Personel();
+
 personel.kaydet()
 personel.maasOde()
